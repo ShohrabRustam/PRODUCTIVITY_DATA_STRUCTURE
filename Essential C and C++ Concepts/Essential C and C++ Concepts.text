@@ -349,6 +349,35 @@ Dereferencing = Print(*ptr)
         }
       
 
+    # Structure and function: 
+        
+        we will cover here struct and function together
+ 
+        struct Rectange{
+            int length,height;
+        };
+
+        void initialize(struct Rectange *r,length,height){
+                r.length = length;
+                r.height = height;
+        }
+
+        int area(struct Rectange r){
+            return ((r.length) * (r.height));
+        }
+
+        void changeLength(struct Rectange *r,length){
+            r->length= length;
+        }
+
+        void main(){
+            struct Rectange rectangle;
+            initialize(rectangle,5,10);
+            cout << "area: " << area(rectangle) << endl;
+            changeLength(rectangle,20)
+            cout << "area: "<<  area(rectangle) << endl
+        }
+
 
 
 
