@@ -58,11 +58,11 @@ d. Accessing a Structure:
 3.Pointer: 
 Before starting we should be understand below points
 
-1. What is Pointer
-2. Why Pointer
-3. Initialization
-4. Dereferencing
-5. Dynamic Allocation
+3.1. What is Pointer
+3.2. Why Pointer
+3.3. Initialization
+3.4. Dereferencing
+3.5. Dynamic Allocation
 
 3.1.What is Pointer : 
     * Pointer is a address variable that can be used for storing address information
@@ -73,9 +73,9 @@ Before starting we should be understand below points
 
 3.2 Why Pointer :
 The main memory is devided into three main parts.
-1. main program (code memory)
-2. Heap memory (External to the program outside the program)
-3. Stack memory
+3.2.1. main program (code memory)
+3.2.2 Heap memory (External to the program outside the program)
+3.2.3 Stack memory
 
 program -> stack(using pointer) -> heap
 
@@ -91,20 +91,22 @@ program -> stack(using pointer) -> heap
     b. Accessing External Resources
     c. Parameter Passing
 
-How to use Pointer (Initialization):
+3.3. How to use Pointer (Initialization):
 
 data variable:  int a = 10
 address variable: int *p;
                     p = &a;
 
-Dereferencing a Pointer:
+3.4. Dereferencing a Pointer:
 
 data variable:  int a = 10
 address variable: int *ptr;
                     ptr = &a;
 
 Dereferencing = Print(*ptr)
-pointer example
+
+3.5. Dynamic Allocation :
+    Dynamic Allocationpointer example
 int main(){
     int * ptr;
     int size = 10;
@@ -126,6 +128,8 @@ int main(){
             cout << r; // print 11
             cout << a; // print 11
  this is the important features of the cpp for write small function.
+
+ 
 
 
 
