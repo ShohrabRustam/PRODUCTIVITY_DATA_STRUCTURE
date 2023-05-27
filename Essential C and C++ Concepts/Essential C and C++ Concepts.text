@@ -379,7 +379,7 @@ Dereferencing = Print(*ptr)
         }
 
 
-    6.Classes :
+    6. Classes :
     * A Class is a fundamental block of a program that has its own set of methods and variables. 
     * You can access these methods and variables by creating an object or the instance of the class. 
     * It's a user-defined source of information that a program can use to generate output based on the class's parameters.
@@ -396,7 +396,63 @@ Dereferencing = Print(*ptr)
     * The constructor is used to INITIALIZE VALUES and is automatically called by the compiler
 
 
+    Template : 
+        cpp support generic functions and generic class so generic functions know as 
+        Template functions and generic classes know as Template classes. 
 
+    example :- 
+            class Arithmatic {
+                private int a,int b;
+                Arithmatic(int a,int b);
+                int sum();
+                int sub();
+            };
+
+            Arithmatic::Arithmatic(int a,int b){
+                this->a = a;
+                this->b = b;
+            }
+
+            Arithmatic:sum(){
+                return (this->a + this->b);
+            }
+            
+            Arithmatic::sub(){
+                return (this->a - this->b);
+            }
+
+     example :-  generic function and class 
+            template <class T>
+
+            class Arithmatic {
+                private T a,T b;
+                Arithmatic(T a,T b);
+                T sum();
+                T sub();
+            };
+
+            template <class T>
+            Arithmatic<T>::Arithmatic(T a,T b){
+                this->a = a;
+                this->b = b;
+            }
+
+            template <class T>
+            Arithmatic:sum(){
+                return (this->a + this->b);
+            }
+
+            template <class T>
+            Arithmatic<T>::sub(){
+                return (this->a - this->b);
+            }
+
+            int main(){
+                Arithmatic <int> ar(10,20);
+                cout << "sub"<<ar.sum();
+                cout << ar.sub();
+                return 0;
+            }
 
 
  
