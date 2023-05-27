@@ -97,7 +97,7 @@ data variable:  int a = 10
 address variable: int *p;
                     p = &a;
 
-3.4. Dereferencing a Pointer:
+3.4. Dereferencing a Pointer :
 
 data variable:  int a = 10
 address variable: int *ptr;
@@ -107,27 +107,55 @@ Dereferencing = Print(*ptr)
 
 3.5. Dynamic Allocation :
     Dynamic Allocationpointer example
-int main(){
-    int * ptr;
-    int size = 10;
-    /* delcare array in heap memory in c language use malloc function */
-    ptr =(int *) malloc(size*sizeof(int)); //malloc function returns void pointer
-    //malloc function allocated heap memory
-    
-    /* delcare array in heap memory in cpp language we are using new keyword */
-    ptr = new int a[size]
+    int main(){
+        int * ptr;
+      ß  int size = 10;
+        /* delcare array in heap memory in c language use malloc function */
+        ptr =(int *) malloc(size*sizeof(int)); //malloc function returns void pointer
+        //malloc function allocated heap memory
+        
+        /* delcare array in heap memory in cpp language we are using new keyword */
+        ptr = new int a[size]
     }   
 
- Reference: Reference features is available only in cpp language not part of c language.
+ 4. Reference: 
+    Reference features is available only in cpp language not part of c language.
   * referece is a nick name given to a variable or alias to a variable.
-  example: 
+    example: 
             int a=10;
             int &r = a;
             cout << a; // print 10
             r = r++;
             cout << r; // print 11
             cout << a; // print 11
+
  this is the important features of the cpp for write small function.
+
+    Pointer to Structure :
+        pointer to Structure is the topic where a pointer have the address of the structure
+        
+        example of pointer to Structure:
+                struct Rectange{
+                    int length,height;
+                };
+                int main(int argc, char){
+                    struct Rectange r = {10,30};
+                    struct Rectange *ptr = &r;
+                    (*ptr).length = 20;
+                    or 
+                    ptr->length = 20;
+
+                    create dynamically using malloc 
+
+                    struct Rectange *dynamic_ptr;
+                    dynamic_ptr = (struct Rectange *)malloc(sizeof(struct Rectange));
+                    dynamic_ptr->length = 10;
+                    dynamic_ptr->height = 20;
+                    
+
+                }
+
+
 
  
 
