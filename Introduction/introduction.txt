@@ -17,13 +17,15 @@ WE NEED TO UNDERSTAND SOME TERMS OF DATA
  4. BIG DATA
 
 1. INTRODUCTION OF DATA STRUCTURE:
-    * DATA STRUCTURE can be define as arrangement of collections of data.so that
-    that can be used effiently.
-    during the execution of program how program manage data inside the main
-    memory and perform the operations that is data structure.
+    * DATA STRUCTURE can be define as arrangement of collections of data.
+      so that data can be used effiently.
+    * during the execution of program how program manage data inside the main
+        memory and perform the operations that is data structure.
 
-    """ ARRANGEMENT OR ORGANIZE THE DATA IN MAIN MEMORY FOR EFFICIENT UTILIZATION
-    BY THE APPLICATION THAT ARRANGEMENT CALLED AS DATA STRUCTURE """"
+    """ 
+    ARRANGEMENT OR ORGANIZE THE DATA IN MAIN MEMORY FOR EFFICIENT UTILIZATION
+    BY THE APPLICATION THAT ARRANGEMENT CALLED AS DATA STRUCTURE 
+    """"
 
 2. DATABASES:
     When the data larger in size or commercial data that is used in
