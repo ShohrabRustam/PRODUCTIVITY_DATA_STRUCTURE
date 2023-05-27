@@ -1,0 +1,21 @@
+
+    ABSTRACT DATATYPE [ADT]:
+
+    1. WHAT IS ADT?
+    2. LIST OF ADT?
+
+    ADT -> ABSTRACT DATATYPE
+
+What is data type?
+    data type is defined as Representation of data
+        # Representation of Data
+        # Operation on Data
+    
+    For representing the list we required three things:
+        1. space to store 
+        2. capacity (maximum capacity)
+        3. size
+
+
+
+
