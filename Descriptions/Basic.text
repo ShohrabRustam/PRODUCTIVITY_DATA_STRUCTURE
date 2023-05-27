@@ -10,7 +10,41 @@ Topics to be cover in this golf_course
 8. Template
 
 
-Array : Array is define as collections of similar data if we have set of float,interger,string the group them under an name as array of float, array of int, array of string.
+1. Array : 
+Array is define as collections of similar data if we have set of float,interger,string,etc,
+group them under an name as array of float, array of int, array of string.
+
 ex: int A[n]  : int->(type of array), n -> size of array , A-> name of array
 int A[n] -> declaretion of an array 
-int A[n] = {0,.,.,.,n-1} -> array declaretion with inis 
+int A[n] = {0,.,.,.,n-1} -> array declaretion with initialize.
+
+2. Structure:
+Structure can be defined as collections of data member that are related data members
+under one name. those data members may be similar/dis-similar data type.
+ * Structure is used for user define data types.
+
+ a. define a Structure
+ b. size of a Structure
+ c. declaretion of a Structure
+ 4. Accessing a Structure data member
+
+ a. define a Structure:
+    
+    struct Rectange{
+        int length;
+        int height;
+    }; ---> 2 byte for length, 2 byte for height (4 bytes for Rectange Structure)
+
+b. size of a Structure: 
+    size of a Structure is defined as total size take by its data members.
+
+c. declaretion of a Structure:
+    int main(){
+        struct Rectange r;
+        r.length = 100;
+        r.height= 20;
+        or
+        struct Rectange r = {100,20}
+
+    }
+ 
