@@ -379,7 +379,21 @@ Dereferencing = Print(*ptr)
         }
 
 
+    6.Classes :
+    * A Class is a fundamental block of a program that has its own set of methods and variables. 
+    * You can access these methods and variables by creating an object or the instance of the class. 
+    * It's a user-defined source of information that a program can use to generate output based on the class's parameters.
+    * A class is defined in C++ using keyword class followed by the name of the class. 
+    * The body of the class is defined inside the curly brackets and terminated by a semicolon at the end. 
+    class className { // some data // some functions };
 
+    7. Constructor : 
+
+    * A constructor is a special method of a class or structure in object-oriented programming that initializes a newly created object of that type.
+    * Whenever an object is created, the constructor is called automatically
+    * A constructor is a special “MEMBER FUNCTION” in C++ that has the same name as the class 
+    * it belongs to and is used to initialise some useful values for an object's data members. 
+    * The constructor is used to INITIALIZE VALUES and is automatically called by the compiler
 
 
 
