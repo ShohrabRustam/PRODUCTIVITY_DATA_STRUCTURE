@@ -107,5 +107,10 @@ pointer example
 int main(){
     int * ptr;
     int size = 10;
+    /* in c language */
     ptr =(int *) malloc(size*sizeof(int)); //malloc function returns void pointer
-}
+    //malloc function allocated heap memory
+    
+    /* in cpp language */
+    ptr = new int a[size]
+    }   
