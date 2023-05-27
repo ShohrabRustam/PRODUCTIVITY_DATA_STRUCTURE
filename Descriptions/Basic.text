@@ -1,0 +1,16 @@
+Topics to be cover in this golf_course
+
+1. Array
+2. Structure
+3. Pointer
+4. Reference
+5. Parameter passing
+6. Classes
+7. Constructor
+8. Template
+
+
+Array : Array is define as collections of similar data if we have set of float,interger,string the group them under an name as array of float, array of int, array of string.
+ex: int A[n]  : int->(type of array), n -> size of array , A-> name of array
+int A[n] -> declaretion of an array 
+int A[n] = {0,.,.,.,n-1} -> array declaretion with inis 
