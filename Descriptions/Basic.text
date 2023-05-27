@@ -47,4 +47,11 @@ c. declaretion of a Structure:
         struct Rectange r = {100,20}
 
     }
+d. Accessing a Structure:
+    struct Rectange r;
+    r.length = 100;
+    r.height= 20;
+
+    accessing of member of structure,
+    return (r.length * r.height); (accessible of member of structure)
  
