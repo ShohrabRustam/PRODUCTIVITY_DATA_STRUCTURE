@@ -294,7 +294,59 @@ Dereferencing = Print(*ptr)
     }
 
 
+    ** Structure as a Parameter / Call by Structure:
+        when we are passing the structure as a parameter to the function known as structure as parameter
 
+        example 1: pass as structure call by value
+
+        struct Rectange {
+            int length,height;
+        };
+
+        int area(struct Rectange r1){
+            return ((r1.height) * (r1.length)) ;
+        }
+        
+        int main() {
+            struct Rectange r = {2,4};
+
+            cout << area(r);
+        }
+
+    example 2: pass as structure call by referece
+
+        struct Rectange {
+            int length,height;
+        };
+
+        int area(struct Rectange &r1){
+            return ((r1.height) * (r1.length)) ;
+        }
+        
+        int main() {
+            struct Rectange r = {2,4};
+
+            cout << area(r);
+        }
+
+     example 3: pass as structure call by address
+
+        struct Rectange {
+            int length,height;
+        };
+
+        void changeLength(struct Rectange *r1,int length){
+            r1->length= length
+            
+        }
+        
+        int main() {
+            struct Rectange r = {2,4};
+            newlength = 10
+           changeLength(&r,newlength);
+           cout << "length: " << r.length <<"height : "<<r.height<< endl
+
+        }
       
 
 
