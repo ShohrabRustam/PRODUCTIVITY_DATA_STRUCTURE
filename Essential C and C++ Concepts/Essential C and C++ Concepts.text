@@ -151,9 +151,11 @@ Dereferencing = Print(*ptr)
                     dynamic_ptr = (struct Rectange *)malloc(sizeof(struct Rectange));
                     dynamic_ptr->length = 10;
                     dynamic_ptr->height = 20;
-                    
+
 
                 }
+
+    
 
 
 
