@@ -155,7 +155,106 @@ Dereferencing = Print(*ptr)
 
                 }
 
+    Functions : 
+        1. What are functions?
+        2.Parameter Passing
+            2.1 Pass by Value
+            2.2 Pass by Address
+            2.3 Pass by Reference
+
     
+    1. What are functions?
+        function is a peace of code which perform a specific task.
+        we already study of structure we define a structure as grouping
+        related data members.
+        * function is a group of related instructions to perform a specific task.
+
+        * Monolithic Programming : 
+            if we are writting everything in a single function know as Monolithic Programming
+            example of Monolithic Programming:
+            fun(){
+                ----
+                ----
+                ----
+            }
+        
+        * Moduler/Procedular programming :
+            if we break a function into smaller functions and call within the
+            function known as Moduler/Procedular programming.
+
+            example of Moduler/Procedular programming is:
+                func(){
+                    fun1();
+                    fun2();
+                }
+    
+    * Parameters Passing to the function:
+        There are three parameters passing mathod 
+            a. Pass by Value
+            b. Pass by Address
+            c. Pass by referece
+     
+    a.Pass by Value/Call by value :
+        if we are passing the value to a function while function calling
+            ex:- call by value
+                void swap(int a, int b){ //a,b is formal parameter
+                    int temp = a;
+                    a= b;
+                    b= temp;
+                }
+                int main() {
+                    int a=10;
+                    int b=20;
+                    swap(a,b); //a,b actual parameter
+                }
+
+        * No swap happen because actual parameter remain same
+        *call by value is not suitable to modified the actual parameter
+
+
+    b.Pass by Pointer/Call by Address :
+        if we are passing the Address to a function while function calling
+            ex:- call by address
+                void swap(int *a, int *b){ //a,b is formal parameter
+                    int temp = *a;
+                    *a= *b;
+                    *b= temp;
+                }
+                int main() {
+                    int a=10;
+                    int b=20;
+                    swap(&a,&b); //a,b actual parameter
+                }
+
+    * swap happen because actual parameter remain same
+    * passing by address is suitable to modified the actual parameter
+
+
+    c. Call by referece :
+        call by referece only supported in cpp this is not part of c language
+        this is very useful and very powerful features or mechanism of cpp
+
+        * it just same as call by value in function declaretion we just pass 
+            address of a formal parameter to the function
+            
+            ex:- call by referece 
+                void swap(int &a, int &b){ //a,b is formal parameter
+                    int temp = a;
+                    a= b;
+                    b= temp;
+                }
+                int main() {
+                    int a=10;
+                    int b=20;
+                    swap(a,b); //a,b actual parameter
+                }
+
+
+
+
+
+
+
 
 
 
