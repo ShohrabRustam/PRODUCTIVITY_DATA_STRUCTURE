@@ -1,0 +1,53 @@
+Introduction to Data Stucture
+
+Data : 
+    Data is an integral part of our application or programs.
+
+Programs : 
+Programs is nothing it just set of instructions which perform operation 
+to get some results.so without data there is no use of instruction.
+
+The term of DATA we are using many place like DATA STRUCTURE, DATABASES,
+DATA WAREHOUSE, BIG DATA etc,
+ 
+WE NEED TO UNDERSTAND SOME TERMS OF DATA
+ 1. DATA STRUCTURE 
+ 2. DATABASES
+ 3. DATA WAREHOUSE
+ 4. BIG DATA
+
+1. INTRODUCTION OF DATA STRUCTURE:
+    * DATA STRUCTURE can be define as arrangement of collections of data.so that
+    that can be used effiently.
+    during the execution of program how program manage data inside the main
+    memory and perform the operations that is data structure.
+
+    """ ARRANGEMENT OR ORGANIZE THE DATA IN MAIN MEMORY FOR EFFICIENT UTILIZATION
+    BY THE APPLICATION THAT ARRANGEMENT CALLED AS DATA STRUCTURE """"
+
+2. DATABASES:
+    When the data larger in size or commercial data that is used in
+    business bank,store,fintech etc organize data in the form of database tables 
+    or relational data.
+
+    " ARRANGING THE DATA IN SOME MODEL LIKE RELATIONAL MODEL AND THE PERMANENT
+    STORAGE SO THAT IT CAN BE RETRIVE OR ACCESS BY APPLICATION EASILY. THAT 
+    ARRANGEMENT KNOW AS DATABASE." 
+
+3. DATA WAREHOUSE : 
+    
+    """ 
+    LARGE SIZE DATA (COMMERCIAL DATA)[LAGACY DATA] A VERY LARGE DATA [LAGACY DATA]
+    THAT MAY NOT BE USED DAILY THAT STORE SOMEWHERE IF REQUIRED WE CAN FETCH DATA 
+    KNOW AS HISTORYCAL DATA WHERE THE DATA STORE KNOWN AS " DATA WAREHOUSE ".
+
+    """
+
+4. BIG DATA :
+    
+    """ 
+    UTILIZATION AND DECION MAKING LARGE DATA AND STUDYING IT FOR MAKE SOME DECISON
+    LIKE INTERNET SEARCH DATA WHICH IS BIG IN SIZE, IT KNOW AS BIG DATA.
+
+    """
+
