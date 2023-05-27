@@ -55,3 +55,57 @@ d. Accessing a Structure:
     accessing of member of structure,
     return (r.length * r.height); (accessible of member of structure)
  
+Pointer: Before starting we should be understand below points
+
+1. What is Pointer
+2. Why Pointer
+3. Initialization
+4. Dereferencing
+5. Dynamic Allocation
+
+What is Pointer : 
+    * Pointer is a address variable that can be used for storing address information
+    of a variable not data itself.
+    * Normal variables are data variables that contain data but pointer variables are
+    address variables that contain address information of a variable.
+    * Pointer use for indirect accessing the data.
+
+Why Pointer :
+The main memory is devided into three main parts.
+1. main program (code memory)
+2. Heap memory (External to the program outside the program)
+3. Stack memory
+
+program -> stack(using pointer) -> heap
+
+ the main (where code is written) program can accessible the data of stack memory 
+ it can not access the data of heap memory directly so for access the data of
+ heap memory pointer come in picture.
+
+ The main use of pointer to access the resources which is outside of the program
+ i,e. keyboard,monitor,mouse,printer,internet,etc.
+
+ Use of Pointer:
+    a. Accessing Heap
+    b. Accessing External Resources
+    c. Parameter Passing
+
+How to use Pointer (Initialization):
+
+data variable:  int a = 10
+address variable: int *p;
+                    p = &a;
+
+Dereferencing a Pointer:
+
+data variable:  int a = 10
+address variable: int *ptr;
+                    ptr = &a;
+
+Dereferencing = Print(*ptr)
+pointer example
+int main(){
+    int * ptr;
+    int size = 10;
+    ptr =(int *) malloc(size*sizeof(int)); //malloc function returns void pointer
+}
