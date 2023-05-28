@@ -1,3 +1,3 @@
-or(int i=0; i<size;i++){
-    //     cout << arr[i] <<" "<<endl;
-    // }
+or(int i = 0; i < n;i++){
+        Arr[i] = i+5;
+    }
