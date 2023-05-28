@@ -130,6 +130,25 @@
                 }
             }
         """
+
     3. TREE RECURSION :
+        """
+        To understand Tree Recursion let’s first understand Linear Recursion.
+        If a recursive function calling itself for one time then 
+        it’s known as Linear Recursion. Otherwise if a recursive function 
+        calling itself for more than one time then it’s known as 
+        Tree Recursion.
+        example: 
+            void recursion_func(int n){
+            if (n > 0) {    
+                // Calling once
+                recursion_func(n - 1);
+                    
+                // Calling twice
+                frecursion_funcun(n - 1);
+                }
+            }
+  
+        """
     4. INDIRECT RECURSION : 
     5. NESTED RECURSION :
