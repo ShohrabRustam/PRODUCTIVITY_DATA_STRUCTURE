@@ -4,6 +4,7 @@
         "__tuple": "cpp",
         "array": "cpp",
         "__bit_reference": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "new": "cpp"
     }
 }
