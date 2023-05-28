@@ -23,6 +23,7 @@ int Rectangle::area(){
 }
 int main(){
     Rectangle rect(2,4);
+    cout << "area before set value is : " <<rect.area() << endl;
     rect.setParam(10,89);
     cout << "area is : " <<rect.area() << endl;
 }
