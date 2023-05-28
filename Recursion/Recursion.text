@@ -81,6 +81,6 @@
         """
         A recurrence or recurrence relation defines an infinite sequence 
         by describing how to calculate the n-th element of the sequence 
-        given the values of smaller elements
+        given the values of smaller elements.
         as in: T(n) = T(n/2) + n, T(0) = T(1) = 1.
         """
