@@ -5,6 +5,15 @@
         "array": "cpp",
         "__bit_reference": "cpp",
         "iostream": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "ostream": "cpp",
+        "__hash_table": "cpp",
+        "__split_buffer": "cpp",
+        "bitset": "cpp",
+        "initializer_list": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp"
     }
 }
