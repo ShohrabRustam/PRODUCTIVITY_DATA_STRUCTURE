@@ -76,3 +76,11 @@
         the function calls itself.If a function calls itself two times 
         then its time complexity is O(2 ^ N). if it calls three times
         then its time complexity is O(3 ^ N) and so on.
+
+    6. RECURRENCE RELATION
+        """
+        A recurrence or recurrence relation defines an infinite sequence 
+        by describing how to calculate the n-th element of the sequence 
+        given the values of smaller elements
+        as in: T(n) = T(n/2) + n, T(0) = T(1) = 1.
+        """
