@@ -7,3 +7,14 @@ Question 5 : Write a program define a pointer to structure
 Question 6 : Write a program define a function pass by value
 Question 7 : Write a program define a function pass by address
 Question 8 : Write a program define a function pass by reference
+Question 9 : Write a program to print n,n-1,....0 by recursive_fun
+Question 10 : Write a program to print 0,1,2...n-1,n by recursive_fun.
+Question 11 : Write a program make a program for the give sync_problem
+            there are n nested rooms (room inside room )
+            1. Switch on Blub
+            2. Go to next room 
+Question 11 : Write a program make a program for the give sync_problem
+            there are n nested rooms (room inside room )
+            1. Go to next room 
+            2. Switch on Blub
+
