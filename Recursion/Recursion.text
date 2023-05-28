@@ -84,3 +84,52 @@
         given the values of smaller elements.
         as in: T(n) = T(n/2) + n, T(0) = T(1) = 1.
         """
+
+    TYPES OF RECURSIONS : 
+        MAINLY THERE ARE 5 TYPES OF RECURSIONS : 
+        1. TAIL RECURSION
+        2. HEAD RECURSION
+        3. TREE RECURSION
+        4. INDIRECT RECURSION
+        5. NESTED RECURSION
+
+    1. TAIL RECURSION :
+        """
+        A special form of recursion where the last operation 
+        of a function is a recursive call. The recursion may be 
+        optimized away by executing the call in the current stack frame
+        and returning its result rather than creating a new stack frame.
+        ex- 
+ 
+            void recursion_func(int n)
+            {
+                if (n < 0)
+                    return;
+                printf("%d ", n);
+
+                // The last executed statement is recursive call
+                recursion_func(n - 1);
+            }
+        """
+
+    2. HEAD RECURSION :
+        """
+        if a recursive function calling itself and that recursive call is the 
+        first statement in the function then it's known as Head Recursion. 
+        There's no statement, no operation before the call. 
+        The function doesn't have to process or perform any operation 
+        at the time of calling and all operations are done at returning time. 
+        example: 
+            void recursion_func(int n)
+            {
+                if (n > 0) {
+            
+                    // First statement in the function
+                    recursion_func(n - 1);
+                    func_abc();
+                }
+            }
+        """
+    3. TREE RECURSION :
+    4. INDIRECT RECURSION : 
+    5. NESTED RECURSION :
