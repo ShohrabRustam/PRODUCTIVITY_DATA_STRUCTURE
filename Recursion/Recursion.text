@@ -54,3 +54,25 @@
             PHASE [ASCENDING] BUT RECURRENCE HAVE ASCENDING AS WELL AS 
             DECENDING PHASE, THIS IS THE STRENGTH/POWER OF RECURSION.
         """
+    
+    4. STACK USED IN RECURSION : 
+
+    """ 
+    Recursive functions use something called “the call stack. When a program 
+    calls a function, that function goes on top of the call stack. This is 
+    similar to a stack of books. You add things one at a time. Then,when 
+    you are ready to take something off, you always take off the top item.
+
+    Every time activation record generated in stack untill we reached to the 
+    base case or terminated case. after reached the base case activation 
+    record deleted from the stack and control goes to the previous call.
+    """
+
+    5. TIME AND SPACE COMPLEXITY : 
+            SPACE COMPLEXITY in recursion may be define as how much activation 
+        records generated in the stack will be space complexity of recursion.
+
+        TIME COMPLEXITY of recursion depends on the number of times 
+        the function calls itself.If a function calls itself two times 
+        then its time complexity is O(2 ^ N). if it calls three times
+        then its time complexity is O(3 ^ N) and so on.
