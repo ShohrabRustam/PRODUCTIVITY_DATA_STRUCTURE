@@ -171,7 +171,7 @@
     
     5. NESTED RECURSION :
         """ 
-        n Nested recursion, the recursive function will pass the parameter as a recursive call. For better understanding, please have a look at the below example. In the below example nested is a recursive function which calls itself. But the parameter itself is a recursive call.
+        Nested recursion, the recursive function will pass the parameter as a recursive call. For better understanding, please have a look at the below example. In the below example nested is a recursive function which calls itself. But the parameter itself is a recursive call.
 
         ex:- 
                 int recursion_func(int n){
