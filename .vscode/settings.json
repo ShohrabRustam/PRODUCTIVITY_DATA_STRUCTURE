@@ -17,6 +17,7 @@
         "vector": "cpp",
         "__locale": "cpp",
         "__string": "cpp",
-        "ios": "cpp"
+        "ios": "cpp",
+        "iosfwd": "cpp"
     }
 }
