@@ -9,7 +9,7 @@ int power(int n,int e){
 double  first =1;
 
 double e(int x,int n) { 
-        if (n==0) return first;
+        if (n==0) return 1;
         first =  first + (double) power(x,n)/factorial(n);
         e(x,n-1);
         return first;  
