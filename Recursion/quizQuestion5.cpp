@@ -12,7 +12,7 @@ void func(int n)
     }
     
     cout<< d << " ";
-  
+
 }
 
 int main(int argc, const char** argv) {
