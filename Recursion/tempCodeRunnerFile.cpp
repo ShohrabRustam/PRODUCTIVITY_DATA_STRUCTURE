@@ -1,1 +1,1 @@
-binarySearch
+midIndexofSubarray

@@ -17,8 +17,7 @@ int binarySearch(int arr[], int leftindex, int rightindex, int x)
         // check in right subarray
         return binarySearch(arr, midindex + 1, rightindex, x);
     }
-    // We reach here when element is not
-    // present in array
+    // element is not
     return -1;
 }
 
