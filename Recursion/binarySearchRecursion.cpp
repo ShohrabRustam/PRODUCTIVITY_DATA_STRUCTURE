@@ -5,7 +5,6 @@ int binarySearch(int A[], int firstElemetofSubarray, int lastElemetofSubarray, i
     int midIndexofSubarray = firstElemetofSubarray + (lastElemetofSubarray - firstElemetofSubarray)/2;
     
     if(firstElemetofSubarray>lastElemetofSubarray || firstElemetofSubarray<0 || lastElemetofSubarray<0){
-        cout<<endl<<"firstElemetofSubarray : "<<firstElemetofSubarray<<"    lastElemetofSubarray is : "<<lastElemetofSubarray<<endl;
         return -1;
     }
     
