@@ -1,1 +1,1 @@
-midIndexofSubarray
+sizeofarray

@@ -18,6 +18,7 @@
         "__locale": "cpp",
         "__string": "cpp",
         "ios": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "__node_handle": "cpp"
     }
 }
