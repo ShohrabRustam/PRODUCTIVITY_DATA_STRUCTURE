@@ -19,6 +19,8 @@
         "__string": "cpp",
         "ios": "cpp",
         "iosfwd": "cpp",
-        "__node_handle": "cpp"
+        "__node_handle": "cpp",
+        "chrono": "cpp",
+        "variant": "cpp"
     }
 }
