@@ -22,7 +22,7 @@ void swapping(int &x, int &y){
 
 void shift(int A[],int sizeOfArray,int index=0){
 
-    if(sizeOfArray == index) {
+    if(sizeOfArray == index ) {
         return;
     }
  
