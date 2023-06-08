@@ -15,3 +15,17 @@
     array is a collections of elements and all the elements are of the same type,
     so array is the collection of similar data elements group under one name.
     array is a " vector variable "
+
+    Delcaring And Initializing  and Accessiong the Array : 
+
+    Declaring the Array: 
+        ex:- (datatype)int  (name of the array)A[size];
+        if we declare the array as ex:- int a[size];
+        the value inside the array will be garbage value (unknow value)/random value
+    
+    Initializing the Array: (Declaring and initializing)
+        ex : A[5] = {1,2,3,4,5} or A[] = {1,2,3,4,5} or A[5] = {1,2}=>{1,2,0,0,0};
+
+    Accessing the Array: 
+        we can Accessing the array using index ex: A[0],A[3],etc...
+    
