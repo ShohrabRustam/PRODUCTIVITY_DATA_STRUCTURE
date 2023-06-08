@@ -1,0 +1,17 @@
+                            Array
+    1. What is array ?
+    2. Delcaring and Initializing the array ?
+    3. Accessing the array ?
+
+    Before Delcaring the array let me explain the variable.
+
+    variable is supported by every programming language, the variable should
+    have some data type for example : int x = 1;
+    as we know very well at run time x get some memory, this type of variable
+    know as single value variable such type of variable know as 
+    " scalar variable " scalar variable means just magnitude.
+
+    we can store multiple values (set of values) in a single variable name,
+    array is a collections of elements and all the elements are of the same type,
+    so array is the collection of similar data elements group under one name.
+    array is a " vector variable "
