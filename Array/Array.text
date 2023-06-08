@@ -28,4 +28,31 @@
 
     Accessing the Array: 
         we can Accessing the array using index ex: A[0],A[3],etc...
+
+
+                        STATIC VS DYNAMIC ARRAY :
+    
+    static array : static array means the size of the array is fixed.
+    the size of the array is fixed and created at compile time.
+    the array is created inside the main memory/stack.
+    
+    dynamic array : static array means the size of the array is dynamic.
+        the size of the array is might be fixed and created at run time.
+        the array is created inside the main memory/heap memory.
+        ex: int * p ;
+        p = new int[n]; //new is the operator
+
+        # after run the program we should have to delete the array which is 
+            created inside heap memory if it is not required otherwise that will
+            occupied the memory.
+             for delete the dynamic array we have to use that syntax
+              
+              delete [] arrayname;
+        
+        * heap memory can not be access directly it can be access indirectly by
+        pointer.
+
+    
+    once the array is created the size of the array can not be modified.
+    
     
