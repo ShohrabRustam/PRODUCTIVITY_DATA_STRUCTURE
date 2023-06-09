@@ -56,13 +56,40 @@
     once the array is created the size of the array can not be modified.
 
 
-    Formaula for getting the Address of an array elements
+    Formaula for getting the Address of an arrasy elements
         1D array :
             Address[A[i]] = L0(initial Address) + i * sizeOfelement(int/char);
 
         2D Row Mazor Formula: if the array have m row and n column
             Address[A[i][j]] = L0(initial Address) + (i * n + j )sizeOfelement(int/char);
 
+    Array ADT : Array as Abstract Data Type 
+        Abstract Data Type means represenation of data and set of operation
+        on data.
+    
+    Array is the basic data structure provided by almost every programming language.
 
+    Array ADT (Abstract Data Type): 
+
+    Data : [Array Represenation]
+        Array space
+        size
+        Length (No. of elements in the array)
+
+    Data [Array Operation]
+        
+        Display()
+        Add(x)/Apppend(x)
+        Insert(x)
+        delete(index)
+        Search(x)
+        Get(x)
+        Set(index,x)
+        Max()
+        Min()
+        Reverse()
+        shift()->leftShift()/rightShift()
+        rotate()
+    
 
     
