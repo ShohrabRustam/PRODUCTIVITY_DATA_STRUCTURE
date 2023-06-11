@@ -24,7 +24,6 @@ int main(int argc, const char** argv) {
         cout<<p[i]<<" ";
     }
     cout<<endl;
-
     for(int i=deteleIndex-1; i<size;i++){
         p[i] = p[i+1];
     }
