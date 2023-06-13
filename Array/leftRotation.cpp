@@ -1,9 +1,11 @@
 #include <iostream>
 using namespace std;
 
-void leftShift(int A[],int size){
+void leftRotation(int A[],int size){
+    int temp = A[0];
     for(int i=0;i<size;i++)
             A[i] = A[i+1];
+            A[size-1] = temp;
 }
 int main(int argc, char** argv){
     int size = 10;
@@ -15,7 +17,7 @@ int main(int argc, char** argv){
         cout<<p[i]<<" ";
     }
     cout<< endl<<"Array Elements After left shift: "; 
-    leftShift(p,10) ;
+    leftRotation(p,size) ;
     for(int i = 0; i < size; i++){
         cout << p[i] << " ";
     }
