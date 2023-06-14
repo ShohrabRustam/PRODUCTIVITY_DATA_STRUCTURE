@@ -10,7 +10,6 @@ void insertElementInSortedArray(int A[],int element,int size){
         if(element<A[i]){
             rightShift(A,i,size);
             A[i] = element;
-
             return;
         }
     }
