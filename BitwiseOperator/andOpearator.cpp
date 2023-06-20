@@ -1,5 +1,13 @@
 #include <iostream>
 using namespace std;
+/*
+    a  b  c= a&b 
+    0  0  0 
+    0  1  0 
+    1  0  0 
+    1  1  1 
+
+*/
 int main(int argc, char ** arg){
     int a = 3;
     int b = 2;
