@@ -1,0 +1,15 @@
+Special Matrix: Special Matrix are square matrix where diamension is n*n.
+it contain more number of zero elements if there are more number of zero elements
+then we can handle them Specially and store only non-zero elements and avoid 
+storage of zero elements.
+So that space and computational time can be saved.
+
+Type of Special Matrix
+    1.Diagonal Matrix
+    2.Lower Triangular Matrix
+    3.Upper Triangular Matrix
+    4.Symmetric Matrix
+    5.TriDiagonal Matrix
+    6.Band Matrix
+    7.Toeptitz Matrix
+    8.Sparse Matrix
