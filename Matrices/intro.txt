@@ -6,7 +6,7 @@ So that space and computational time can be saved.
 
 Type of Special Matrix
     1.Diagonal Matrix
-    2.Lower Triangular Matrix
+    2.Lower Triangular Matrix=>[n * (n+1)]/2 is non zero element and [n* (n-1)]/2 is zero element.
     3.Upper Triangular Matrix
     4.Symmetric Matrix
     5.TriDiagonal Matrix
