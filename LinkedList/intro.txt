@@ -1,0 +1,11 @@
+Problem with Array?
+    
+    1. Array have fixed length/size
+    2. whenever we are creating a new array we have to mention the size
+    of the array and later on we can not increase the size/decrease 
+    the size of the array.So once created remains same.
+    3.if we take random size that size may be insufficient or accessed.
+
+Differences between Array and LinkedList?
+
+    
