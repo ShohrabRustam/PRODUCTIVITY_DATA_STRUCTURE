@@ -13,4 +13,5 @@ Differences between Array and LinkedList?
     3.must create the memory in head during run time.
     4.we should linking for making LinkedList.
     5.remove and insert operations are easy.
+    6.more flexible than array.
     
