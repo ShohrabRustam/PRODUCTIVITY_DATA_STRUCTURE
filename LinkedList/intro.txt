@@ -32,7 +32,7 @@ Node Structure?
     Node contains data and pointer to next node.
     pointer will be of own type [Node type].
 
-    such structure known as self-referencial structure.
+    such structure known as self-referential structure.
 
 Create a Node?
 
