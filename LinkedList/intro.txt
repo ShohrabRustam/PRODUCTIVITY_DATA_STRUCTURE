@@ -32,6 +32,8 @@ Node Structure?
     Node contains data and pointer to next node.
     pointer will be of own type [Node type].
 
+    such structure known as self-referencial structure.
+
 Create a Node?
 
 Access Node?
