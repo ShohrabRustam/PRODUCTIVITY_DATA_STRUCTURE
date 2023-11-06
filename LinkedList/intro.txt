@@ -34,6 +34,14 @@ Node Structure?
 
     such structure known as self-referential structure.
 
+    Struct Node{
+        int data;
+        struct Node *next;
+    }
+
 Create a Node?
+
+    struct Node *p;
+    p = new Node;
 
 Access Node?
