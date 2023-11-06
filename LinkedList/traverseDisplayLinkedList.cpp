@@ -6,8 +6,15 @@ struct Node
     int data;
     struct Node *next;
 };//such a structure known as self referential structure
-
+void displayLinkedList(struct Node *p){
+ struct Node *temp = p;
+    while(temp != NULL){
+        cout << "Node " << temp->data<<endl;
+        temp = temp->next;
+    }
+}
 int main (){
+    
     /* Initialize nodes */
     struct Node *head;
     struct Node *one = NULL;
@@ -32,8 +39,9 @@ int main (){
 
     /* Save address of first node in head */
     head = one;
+
+    displayLinkedList(head);
     
-    // [1 |address2]->[2 |address3]->[3 |NULL]->
 }
 
 
