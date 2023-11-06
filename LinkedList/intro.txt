@@ -15,3 +15,8 @@ Differences between Array and LinkedList?
     5.remove and insert operations are easy.
     6.more flexible than array.
     
+What is LinkedList?
+    LinkedList is a collection of Nodes.
+    Where Each Node contains data and pointer
+    to next node.
+
