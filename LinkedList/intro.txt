@@ -12,4 +12,5 @@ Differences between Array and LinkedList?
     2.variable size data structre which should grow and reduce the size.
     3.must create the memory in head during run time.
     4.we should linking for making LinkedList.
+    5.remove and insert operations are easy.
     
