@@ -8,4 +8,11 @@ struct Node
 
 int main (){
     struct Node *p = NULL;
+    // condition to check the pointer is not pointing anywhere
+    if(p==0) 
+    // true;
+    if(p==NULL)
+    //true;
+    if(!p)
+        // true;
 }
