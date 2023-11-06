@@ -8,8 +8,8 @@ Problem with Array?
 
 Differences between Array and LinkedList?
 
-    1.data structre which should grow and reduce the size.
-    2.variable size data structre which should grow and reduce the size.
+    1.data structure which should grow and reduce the size.
+    2.variable size data structure which should grow and reduce the size.
     3.must create the memory in head during run time.
     4.we should linking for making LinkedList.
     5.remove and insert operations are easy.
@@ -19,4 +19,19 @@ What is LinkedList?
     LinkedList is a collection of Nodes.
     Where Each Node contains data and pointer
     to next node.
+    
+What is a Node?
+    A linked list consists of a data element known as a node.
+    And each node consists of two fields: 
+        one field has data, 
+        and second field, the node has an address 
+        that keeps a reference to the next node.
 
+Node Structure?
+
+    Node contains data and pointer to next node.
+    pointer will be of own type [Node type].
+
+Create a Node?
+
+Access Node?
