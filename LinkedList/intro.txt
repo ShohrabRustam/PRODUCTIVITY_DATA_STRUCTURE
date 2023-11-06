@@ -45,3 +45,5 @@ Create a Node?
     p = new Node;
 
 Access Node?
+    p->data = 5;
+    p->next =null;
