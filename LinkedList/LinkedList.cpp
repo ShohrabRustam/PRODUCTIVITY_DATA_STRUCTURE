@@ -28,6 +28,15 @@ void createLinkList(struct Node ** head,int data){
     }
 }
 
+void printLinkedList(Node* root) {
+    Node *p = root;
+   while (p != NULL) {
+      cout << p->data << " -> ";
+      p = p->next;
+   }
+   cout << "NULL" << endl;
+   delete[] p;
+}
 
 int main(){
     Node *head ;
@@ -36,4 +45,6 @@ int main(){
     createLinkList(&head,30);
     createLinkList(&head,40);
     
+    printLinkedList(head);
+
 }
