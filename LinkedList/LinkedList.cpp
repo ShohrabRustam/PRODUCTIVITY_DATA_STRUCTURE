@@ -6,14 +6,15 @@ struct Node{
     struct Node *next;
 };
 
-struct Node * createNode(data){
-    struct Node *newNode = new Node;
+ Node * createNode(int data){
+    Node *newNode = new Node;
     newNode->data = data;
     newNode->next = NULL;
     return newNode;
 }
 
 int main(){
-
+    Node *head ;
+   
 
 }
