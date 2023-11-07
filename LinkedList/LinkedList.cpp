@@ -13,8 +13,27 @@ struct Node{
     return newNode;
 }
 
+void createLinkList(struct Node ** head,int data){
+    Node *newNode = createNode(data);
+    
+    if(!*head){
+        *head = newNode;
+    }else{
+       Node *p;
+       p = *head;
+        while(p->next){
+            p=p->next;
+        }
+        p->next = newNode;
+    }
+}
+
+
 int main(){
     Node *head ;
-   
-
+    createLinkList(&head,10);
+    createLinkList(&head,20);
+    createLinkList(&head,30);
+    createLinkList(&head,40);
+    
 }
