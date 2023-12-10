@@ -39,7 +39,7 @@ void printLinkedList(Node* root) {
 }
 
 int main(){
-    Node *head ;
+    Node *head = NULL;
     createLinkList(&head,10);
     createLinkList(&head,20);
     createLinkList(&head,30);
