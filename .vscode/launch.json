@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/shohrabrustam/Documents/PRODUCTIVITY_DATA_STRUCTURE/LinkedList",
-      "program": "/Users/shohrabrustam/Documents/PRODUCTIVITY_DATA_STRUCTURE/LinkedList/build/Debug/outDebug"
+      "cwd": "/Users/shohrabrustam/Documents/PRODUCTIVITY_DATA_STRUCTURE",
+      "program": "/Users/shohrabrustam/Documents/PRODUCTIVITY_DATA_STRUCTURE/build/Debug/outDebug"
     }
   ]
 }

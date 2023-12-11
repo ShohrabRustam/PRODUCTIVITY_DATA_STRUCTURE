@@ -31,11 +31,50 @@ Node * addAtFirstNode(struct Node ** head,int data){
     return *head;
 }
 
+// function to insert a Node at required position 
+
+void insertNodeAtGivenPos(Node** head, int pos, int data) 
+{ 
+    // This condition to check whether the 
+    // position given is valid or not.
+    
+    if (pos < 1 || pos > size + 1) 
+        cout << "Invalid position!" << endl; 
+    else { 
+        // Keep looping until the pos is zero 
+        while (pos--) { 
+  
+            if (pos == 0) { 
+  
+                // adding Node at required position 
+                Node* temp = createNode(data); 
+  
+                // Making the new Node to point to  
+                // the old Node at the same position 
+                temp->next = *head; 
+  
+                // Changing the pointer of the Node previous  
+                // to the old Node to point to the new Node 
+                *head = temp; 
+            } 
+            else
+              // Assign double pointer variable to point to the  
+              // pointer pointing to the address of next Node  
+              head = &(*head)->next; 
+        } 
+        size++; 
+    }
+
+}
+
 /* Function to add the last node   
    of the linked list */
 Node* addAtLastNode(Node ** head,int data){
+    
     Node *newNode = createNode(data);
+    
     Node *tempNode = *head;
+    
     if (!tempNode){
         *head = newNode;
     }else{
@@ -112,26 +151,7 @@ int main()
     head = addAtLastNode(&head,2);
     head = addAtFirstNode(&head,2);
     head = addAtLastNode(&head,3);
+    insertNodeAtGivenPos(&head,1,10);
     printLinkedList(head);
-    cout <<"Size: "<<size<<endl;
-    head = deletFirstNode(head); 
-    head = deletFirstNode(head); 
-    head = deletFirstNode(head); 
-    printLinkedList(head);
-    cout <<"Size: "<<size<<endl;
-
-    head = removeLastNode(head);
-    printLinkedList(head);
-    cout <<"Size: "<<size<<endl;
-
-    head = addAtFirstNode(&head,3);
-    head = addAtLastNode(&head,4);
-    head = addAtFirstNode(&head,4);
-    head = addAtFirstNode(&head,5);
-    head = removeLastNode(head);
-    head = addAtLastNode(&head,5);
-    printLinkedList(head);
-    cout <<"Size: "<<size<<endl;
-    
     return 0;
 }
