@@ -35,7 +35,7 @@ void printLinkedList(Node* head) {
 }
 
 int main(){
-    Node *head;
+    Node *head=NULL;
     addAtFirstNode(&head,1);
     addAtFirstNode(&head,2);
     addAtFirstNode(&head,3);
