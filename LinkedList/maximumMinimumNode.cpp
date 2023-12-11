@@ -1,4 +1,6 @@
 #include<iostream>
+#include <algorithm>
+#include <limits.h>
 using namespace std; 
 struct Node{
     int data;
@@ -7,6 +9,8 @@ struct Node{
 
 // varible to show the size of the linklist
 unsigned size = 0;
+int max_ = INT_MIN;
+int min_ = INT_MAX;
 
 /* Function to create node   
    of the linked list */
@@ -152,6 +156,31 @@ int sumOfAllNodes(Node * head){
     }
 }
 
+/* Function to find maximum data node
+   of the linked list */
+int maxNode(Node * node){
+    
+    if(node==NULL){
+        return max_;
+    }
+    
+    max_ = max(max_, node->data);
+    
+    return maxNode(node->next);
+}
+
+/* Function to find maximum data node
+   of the linked list */
+int minNode(Node * node){
+    
+    if(node==NULL){
+        return min_;
+    }
+    
+    min_ = min(min_, node->data);
+    
+    return minNode(node->next);
+}
 
 int main()
 {
@@ -164,5 +193,8 @@ int main()
     insertNodeAtGivenPos(&head,1,10);
     printLinkedList(head);
     cout<<"SUM OF ALL NODES : "<< sumOfAllNodes(head)<<endl;
+    cout <<"MAX NODE: "<< maxNode(head)<<endl;
+    cout <<"MIN NODE: "<< minNode(head)<<endl;
+
     return 0;
 }
