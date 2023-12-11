@@ -12,6 +12,7 @@ Node * createNode(int data){
     newNode->next =NULL;
     return newNode;
 }
+
 void addAtLastNode(Node ** head,int data){
     Node *newNode = createNode(data);
     Node *tempNode = *head;
