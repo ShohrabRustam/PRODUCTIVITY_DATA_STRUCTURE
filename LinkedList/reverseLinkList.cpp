@@ -142,10 +142,14 @@ void printLinkedList(Node* head) {
    delete[] p;
 }
 
+/* Function to get the size   
+   of the linked list */
 int count(){
     return size;
 }
 
+/* Function to insert sorted elements   
+   of the linked list */
 void sortedInsert(Node ** head,int value){
     Node *newNode = createNode(value);
     if(*head==NULL){
@@ -163,6 +167,7 @@ void sortedInsert(Node ** head,int value){
         }
     }
 
+/* Function to check list is sorted  */
 bool islistSorted(Node *head){
     if(!head)
         return true;
@@ -176,6 +181,8 @@ bool islistSorted(Node *head){
     return true;
 }
 
+/* Function to remove duplicates from   
+   of the linked list */
 void removeDuplicate(Node *head){
     if(!head){
         return;
@@ -195,28 +202,46 @@ void removeDuplicate(Node *head){
     }
 }
 
+
+/* Function to reverse   
+   of the linked list */
+Node * reverseLinkList(Node **head){
+    Node *p,*q,*r ;
+    p = *head;
+    while(p){
+        r=q;
+        q=p;
+        p=p->next;
+        q->next=r;
+    }
+    *head=q;
+    return *head;
+ }
+
 int main()
 {
     Node *head = NULL;
     head = addAtFirstNode(&head,5);
     head = addAtFirstNode(&head,4);
+
     head = addAtFirstNode(&head,4);
     head = addAtFirstNode(&head,3);
-    head = addAtFirstNode(&head,3);
-    head = addAtFirstNode(&head,3);
-    head = addAtFirstNode(&head,3);
 
     head = addAtFirstNode(&head,3);
     head = addAtFirstNode(&head,1);
-    head = addAtFirstNode(&head,1);
-    head = addAtFirstNode(&head,1);
-    head = addAtFirstNode(&head,1);
-    head = addAtFirstNode(&head,1);
-    head = addAtFirstNode(&head,1);
 
-    sortedInsert(&head,1);
     removeDuplicate(head);
-    cout <<"Is List Sorted : " << islistSorted(head) << endl;
+
     printLinkedList(head);
+
+    head = reverseLinkList(&head);
+
+    printLinkedList(head);
+
+    head = reverseLinkList(&head);
+
+    printLinkedList(head);
+
+
     return 0;
 }
