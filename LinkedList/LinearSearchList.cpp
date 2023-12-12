@@ -1,6 +1,4 @@
 #include<iostream>
-#include <algorithm>
-#include <limits.h>
 using namespace std; 
 struct Node{
     int data;
@@ -9,8 +7,6 @@ struct Node{
 
 // varible to show the size of the linklist
 unsigned size = 0;
-int max_ = INT_MIN;
-int min_ = INT_MAX;
 
 /* Function to create node   
    of the linked list */
@@ -146,72 +142,37 @@ void printLinkedList(Node* head) {
    delete[] p;
 }
 
-/* Function to find sum of all nodes  
-   of the linked list */
-int sumOfAllNodes(Node * head){
-    if(head== NULL){
-        return 0;
+int count(){
+    return size;
+}
+
+void sortedInsert(Node ** head,int value){
+    Node *newNode = createNode(value);
+    if(*head==NULL){
+        *head = newNode;
+    }else if((*head)->data >= value){
+        *head = addAtFirstNode(head,value);
     }else{
-        return sumOfAllNodes(head->next) + head->data;
-    }
-}
-
-/* Function to find maximum data node
-   of the linked list */
-int maxNode(Node * node){
-    
-    if(node==NULL){
-        return max_;
-    }
-    
-    max_ = max(max_, node->data);
-    
-    return maxNode(node->next);
-}
-
-/* Function to find maximum data node
-   of the linked list */
-int minNode(Node * node){
-    
-    if(node==NULL){
-        return min_;
-    }
-    
-    min_ = min(min_, node->data);
-    
-    return minNode(node->next);
-}
-
-Node * liearSearch(Node *head,int key){
-    
-    if(!head){
-        Node *nullNode = new Node;
-        nullNode->data = INT_MIN;
-        return nullNode;
-    }else{
-        if(head->data == key){
-            return head;
+        Node *p = new Node;
+            p = *head;
+            while(p->next && p->data<value){
+                p = p->next;
+            }
+            newNode->next =p->next;
+            p->next = newNode;
         }
-        return liearSearch(head->next,key);
     }
-}
+
 
 int main()
 {
     Node *head = NULL;
-    head = addAtLastNode(&head,1);
-    head = addAtFirstNode(&head,1);
-    head = addAtLastNode(&head,2);
+    head = addAtFirstNode(&head,5);
+    head = addAtFirstNode(&head,4);
+    head = addAtFirstNode(&head,3);
     head = addAtFirstNode(&head,2);
-    head = addAtLastNode(&head,3);
+    head = addAtFirstNode(&head,1);
+    sortedInsert(&head,1);
     printLinkedList(head);
-    Node *searchNode = new Node;
-    searchNode = liearSearch(head,5);
-    cout <<"Search Node : "<<searchNode->data<<endl;
-    cout <<"Size of the List is : " << size << endl;
-    cout<<"SUM OF ALL NODES : "<< sumOfAllNodes(head)<<endl;
-    cout <<"MAX NODE: "<< maxNode(head)<<endl;
-    cout <<"MIN NODE: "<< minNode(head)<<endl;
-
     return 0;
 }
