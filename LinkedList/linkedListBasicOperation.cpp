@@ -142,6 +142,9 @@ void printLinkedList(Node* head) {
    delete[] p;
 }
 
+int count(){
+    return size;
+}
 
 int main()
 {
