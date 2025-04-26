@@ -13,8 +13,6 @@ int fun(int n)
     fun(n-1);
     
     cout<<n<<" "<<endl;
-
-    fun(n-1);
     
     return 0;
 }
