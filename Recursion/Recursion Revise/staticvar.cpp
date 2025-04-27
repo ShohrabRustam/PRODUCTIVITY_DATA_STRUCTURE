@@ -11,9 +11,9 @@ int fun(int n)
     if(n==0)
         return 0;
     
-    fun(n-1) + 1;
+    int res = fun(n-1) + n;
     
-    cout<<"return call "<<n<<" "<<endl;
+    cout<<"return call "<<res<<" "<<endl;
     
     return 0;
 }
