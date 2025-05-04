@@ -206,15 +206,17 @@ void removeDuplicate(Node *head){
 /* Function to reverse   
    of the linked list */
 Node * reverseLinkList(Node **head){
-    Node *p,*q,*r ;
-    p = *head;
-    while(p){
-        r=q;  
-        q=p;
-        p=p->next;
-        q->next=r;
+    Node *prev = NULL;
+    Node *current = *head;
+    Node *next = NULL;
+
+    while (current != NULL) {
+        next = current->next; // Store next node
+        current->next = prev; // Reverse the link
+        prev = current;       // Move prev to current
+        current = next;       // Move to next node
     }
-    *head=q;
+    *head = prev; // Update head to new first node
     return *head;
  }
 
