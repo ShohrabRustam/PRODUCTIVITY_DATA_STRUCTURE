@@ -5,7 +5,7 @@ struct Node{
     int data;
     struct Node *next;
     struct Node *prev;
-};
+}*head, *tail;
 
  Node * createNode(int data){
     Node *newNode = new Node;
@@ -28,6 +28,7 @@ void createLinkList(struct Node ** head,int data){
         }
         p->next = newNode;
         newNode->prev = p;
+        tail = newNode;
     }
 }
 
@@ -48,6 +49,6 @@ int main(){
     createLinkList(&head,30);
     createLinkList(&head,40);
     
-    printLinkedList(head);
+    printLinkedList(tail);
 
 }
