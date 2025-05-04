@@ -11,8 +11,19 @@ struct Node{
     Node *newNode = new Node;
     newNode->data = data;
     newNode->next = NULL;
-    newNode->prev = NULL;
     return newNode;
+}
+
+void addAtFirstNode(struct Node ** head,int data){
+    Node *newNode = createNode(data);
+    if (!*head){
+        *head = newNode;
+        tail = *head;
+    }else{
+        newNode->next = *head;
+        *head = newNode;
+    }
+    
 }
 
 void createLinkList(struct Node ** head,int data){
@@ -20,7 +31,7 @@ void createLinkList(struct Node ** head,int data){
     
     if(!*head){
         *head = newNode;
-        tail = head;
+        tail = *head;
     }else{
        Node *p;
        p = *head;
@@ -28,7 +39,6 @@ void createLinkList(struct Node ** head,int data){
             p=p->next;
         }
         p->next = newNode;
-        newNode->prev = p;
         tail = newNode;
     }
 }
@@ -44,12 +54,12 @@ void printLinkedList(Node* root) {
 }
 
 int main(){
-
+    Node *head = NULL;
     createLinkList(&head,10);
     createLinkList(&head,20);
     createLinkList(&head,30);
     createLinkList(&head,40);
-    
+    addAtFirstNode(&head,5);
     printLinkedList(head);
 
 }
