@@ -70,8 +70,10 @@ int main() {
     s.push(30); 
     s.pop();
     cout << "Size of stack: " << s.size() << endl;
-
+    cout << "Is stack empty? " << (s.isEmpty() ? "Yes" : "No") << endl;
     cout << "Top element: " << s.top() << endl;
+    cout << "Peak element: " << s.peak() << endl;
+    cout << "Size of Stack : " << s.size() << endl;
 
     return 0;
 }
