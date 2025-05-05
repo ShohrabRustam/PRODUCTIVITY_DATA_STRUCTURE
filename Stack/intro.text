@@ -1,0 +1,5 @@
+Stack :stack is a linear data structure that follows the LIFO principle 
+        — Last In, First Out.
+LIFO: The last element added is the first one to be removed.
+
+Think of it like a stack of plates — you add (push) to the top and remove (pop) from the top.
