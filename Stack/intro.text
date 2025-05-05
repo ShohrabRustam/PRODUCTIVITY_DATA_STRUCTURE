@@ -3,3 +3,16 @@ Stack :stack is a linear data structure that follows the LIFO principle
 LIFO: The last element added is the first one to be removed.
 
 Think of it like a stack of plates — you add (push) to the top and remove (pop) from the top.
+
+ADT : Abstract Data type of stack (Data contain data representation)
+
+Data: 
+    1.Space for storing elements
+    2.Top pointer
+
+operations: 
+        push(x)
+        pop()
+        peek(index)
+        stackTop()
+        isEmpty()
