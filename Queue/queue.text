@@ -4,3 +4,15 @@ Stack :quue is a linear logical data structure that follows the FIFO principle
 FIFO: The first element added in linked list the last one to be removed from list.
 
 Example: think if you are in a sliding pipe from top to down.
+
+ADT: Space for storing elements
+
+    Front for deletion
+    Rear to insertion 
+
+operations: 
+            1.enqueue(x)
+            2.dequeue()
+            3.isEmpty()
+            4.First()
+            5.Last()
