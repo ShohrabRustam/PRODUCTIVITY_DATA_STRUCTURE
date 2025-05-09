@@ -1,0 +1,6 @@
+Stack :quue is a linear logical data structure that follows the FIFO principle 
+        — First In, First Out.
+
+FIFO: The first element added in linked list the last one to be removed from list.
+
+Example: think if you are in a sliding pipe from top to down.
