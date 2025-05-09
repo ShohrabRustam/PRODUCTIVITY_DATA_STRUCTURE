@@ -160,10 +160,10 @@ string Stack<string>::infixToPrefix(string infix) {
 
 template <>
 int Stack<string>::postFixEvolution(string postfix) {
+    Stack<int> exprConverter;
 
   for(int i=0; i<postfix.length(); i++){
     if(isOperand(postfix[i]-'0')){
-        Stack<int> exprConverter;
         exprConverter.push(postfix[i]);
     }else{
         int op1 = exprConverter.top();
