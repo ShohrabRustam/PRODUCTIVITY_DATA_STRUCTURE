@@ -4,3 +4,9 @@ Tree: a tree in computer science is indeed a collection of nodes
         and the edges define the hierarchical relationships between them.
 
 if there a (N) Node/Nodes then there will be (N-1) edge/edges. 
+
+A tree is a collection of nodes among those nodes one node takes as root node.
+Rest of the node are disjoint subset known as tree or subtree.
+
+Terminology:   
+        Root: 
