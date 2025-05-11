@@ -39,3 +39,7 @@ Ancestors: an ancestor of a node is any node that lies on the path from
         the root to that node, excluding the node itself.
 
 Degree of Node: Number of direct children.
+
+Internal Nodes (Non leaf node): an internal node (also called a non-leaf node) is any node that has at least one child.
+
+External Node (leaf node):  an external node (also called a leaf node) is a node that does not have any children.
