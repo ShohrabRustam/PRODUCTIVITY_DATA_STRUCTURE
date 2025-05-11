@@ -48,3 +48,4 @@ Level : the level of a node refers to its depth or distance from the root, measu
 
 Height : the height of a node is the longest path (in terms of edges) from that node down to a leaf. The height of the tree is the height of the root node.
 
+Forest: collection of trees known as Forest.
