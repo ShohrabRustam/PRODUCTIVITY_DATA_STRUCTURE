@@ -29,3 +29,5 @@ child : a child is a node that is directly connected
         A child has exactly one parent.
         A node can be a child and also a parent to other nodes.
         Nodes with no children are called leaf nodes.
+
+Sibling: Childern of same parent.
