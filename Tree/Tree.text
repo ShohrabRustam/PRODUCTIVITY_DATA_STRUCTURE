@@ -23,4 +23,9 @@ Terminology:
         Every node (except the root) has exactly one parent.
         A parent can have multiple children (e.g., in binary or n-ary trees).
 
-
+child : a child is a node that is directly connected 
+        and descended from another node, called its parent.
+        
+        A child has exactly one parent.
+        A node can be a child and also a parent to other nodes.
+        Nodes with no children are called leaf nodes.
