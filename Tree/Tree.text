@@ -9,4 +9,14 @@ A tree is a collection of nodes among those nodes one node takes as root node.
 Rest of the node are disjoint subset known as tree or subtree.
 
 Terminology:   
-        Root: 
+   Root:
+        
+        It is the starting point from which all other nodes descend.
+        
+        It has no parent.
+
+        There is only one root in a tree.
+
+        It is the entry point for traversals like BFS or DFS.
+
+        All other nodes are direct or indirect children of the root.
