@@ -1,3 +1,4 @@
 binary tree: A tree with degree two in other word a node have maximum two childern know as binary tree.
 degree(T) < = 2;
+childern = {0,1,2}
 Every node have either 0 childern or 1 child or atmost 2 children.
