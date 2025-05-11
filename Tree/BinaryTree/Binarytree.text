@@ -21,3 +21,5 @@ Unlabbled Nodes:
     T(n) = 2nCn/n+1; its famous as Catalon Number
 
     T(n) = Catalon Number = 2nCn/n+1
+
+   number of maximum height tree: 2^n-1
