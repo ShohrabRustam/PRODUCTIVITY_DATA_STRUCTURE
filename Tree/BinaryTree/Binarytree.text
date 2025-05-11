@@ -2,3 +2,10 @@ binary tree: A tree with degree two in other word a node have maximum two childe
 degree(T) < = 2;
 childern = {0,1,2}
 Every node have either 0 childern or 1 child or atmost 2 children.
+
+
+left skewed binary tree: 
+A left skewed binary tree is a special type of binary tree where each node has only a left child and no right child. It looks like a linked list bending to the left.
+
+right skewed binary tree: 
+A right skewed binary tree is a special type of binary tree where each node has only a right child and no left child. It looks like a linked list bending to the right.
