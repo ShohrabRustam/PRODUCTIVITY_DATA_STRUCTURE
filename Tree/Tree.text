@@ -10,13 +10,17 @@ Rest of the node are disjoint subset known as tree or subtree.
 
 Terminology:   
    Root:
-        
         It is the starting point from which all other nodes descend.
-        
         It has no parent.
-
         There is only one root in a tree.
-
         It is the entry point for traversals like BFS or DFS.
-
         All other nodes are direct or indirect children of the root.
+
+  Parent: a parent is a node that has one or more child nodes 
+        directly connected to it.
+        
+        A node is a parent if it has at least one child.
+        Every node (except the root) has exactly one parent.
+        A parent can have multiple children (e.g., in binary or n-ary trees).
+
+
