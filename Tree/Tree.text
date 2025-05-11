@@ -45,3 +45,6 @@ Internal Nodes (Non leaf node): an internal node (also called a non-leaf node) i
 External Node (leaf node):  an external node (also called a leaf node) is a node that does not have any children.
 
 Level : the level of a node refers to its depth or distance from the root, measured by the number of edges from the root to that node
+
+Height : the height of a node is the longest path (in terms of edges) from that node down to a leaf. The height of the tree is the height of the root node.
+
