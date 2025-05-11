@@ -31,3 +31,11 @@ child : a child is a node that is directly connected
         Nodes with no children are called leaf nodes.
 
 Sibling: Childern of same parent.
+
+Decendents: Decendents are set of node which can reached from a perticular node or 
+        under that node.
+
+Ancestors: an ancestor of a node is any node that lies on the path from 
+        the root to that node, excluding the node itself.
+
+Degree of Node: Number of direct children.
