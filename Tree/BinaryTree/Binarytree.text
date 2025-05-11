@@ -9,3 +9,15 @@ A left skewed binary tree is a special type of binary tree where each node has o
 
 right skewed binary tree: 
 A right skewed binary tree is a special type of binary tree where each node has only a right child and no left child. It looks like a linked list bending to the right.
+
+Number of binary tree can be generated with N nodes:
+
+    1. Unlabbled Nodes
+    2. Labbled Nodes
+
+Unlabbled Nodes:    
+            Number of Binary tree 
+
+    T(n) = 2nCn/n+1; its famous as Catalon Number
+
+    T(n) = Catalon Number = 2nCn/n+1
