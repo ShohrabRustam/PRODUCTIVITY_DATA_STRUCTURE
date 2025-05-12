@@ -1,0 +1,18 @@
+Here Node and height relationship.
+
+if N is number of node and h is height of the Formula
+
+There is gp series like given below
+
+a + ar + ar^2 + ar^3 +........... + ar^h
+
+there gp series   [r degree of tree,  h heigh of the tree, a is constant]
+
+
+GP = a*(r^(h + 1) - 1 ) / (r-1)
+
+GP = r^(h+1) -1 / r-1; here r is degree of a tree in my case its 2 
+
+max(N) = 2^(h+1) -1;
+
+min(N) = h + 1;
