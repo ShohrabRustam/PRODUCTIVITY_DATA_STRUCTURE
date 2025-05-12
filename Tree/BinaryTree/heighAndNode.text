@@ -16,3 +16,7 @@ GP = r^(h+1) -1 / r-1; here r is degree of a tree in my case its 2
 max(N) = 2^(h+1) -1;
 
 min(N) = h + 1;
+
+Number of nodes in a binary tree
+
+      h+1 <= n <= 2^h+1 -1
