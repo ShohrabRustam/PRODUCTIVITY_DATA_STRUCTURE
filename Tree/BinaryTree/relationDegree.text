@@ -4,3 +4,4 @@ for Binary Tree the degree relation ship
 total node = degree(2) + degree(1) + degree(0)
 
 degree(0) = deg(2) + 1 its always true for binary tree
+

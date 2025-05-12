@@ -25,3 +25,14 @@ Unlabbled Nodes:
    number of maximum height tree: 2^n-1
 
    Catalon Formula = sum(i,n) => T(i-1) * T(n-i); 
+
+Strict Binary Tree:
+                The tree have degree 2 or zero know as strict binary tree.
+
+Min node n = 2*h + 1;
+
+max node n = 2^h+1 -1
+
+Min height h = log2(n+1) -1;
+
+max height h = n-1/2
