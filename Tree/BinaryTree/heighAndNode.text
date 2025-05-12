@@ -20,3 +20,9 @@ min(N) = h + 1;
 Number of nodes in a binary tree
 
       h+1 <= n <= 2^h+1 -1
+
+Height of a binary tree is 
+
+ log2(n+1) -1 < h < n-1 
+
+ O(N) <= n < O(n)
