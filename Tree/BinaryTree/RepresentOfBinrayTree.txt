@@ -1,0 +1,6 @@
+Element i 
+L child = 2*i ;
+
+R child = 2*i + 1;
+
+Parent = i/2;
