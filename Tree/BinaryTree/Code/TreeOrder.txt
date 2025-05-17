@@ -1,0 +1,10 @@
+PreOrder : visit(node), PreOrder(left subtree), PreOrder(right subtree)
+InOrder :  InOrder(left subtree), visit(node), InOrder(right subtree)
+PostOrder : PostOrder(left subtree), PostOrder(right subtree), visit(node)
+Level Order: level by level
+
+ex :  A root, A left -> B, A right -> C
+    PreOrder: A,B,C
+    InOrder: B,A,C
+    PostOrder: B,C,A
+    Level : A,B,C
