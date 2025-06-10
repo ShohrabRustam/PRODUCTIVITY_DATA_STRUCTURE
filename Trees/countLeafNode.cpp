@@ -19,7 +19,7 @@ struct TreeNode {
     if (root == NULL) return 0;
     if (root->left == NULL && root->right == NULL) return 1; // Leaf node
     return countLeafNodes(root->left) + countLeafNodes(root->right);
-
+   }
 
 void inorderTraversalLNR(TreeNode* root, vector<int>& result) {
     if (root == NULL) return;
