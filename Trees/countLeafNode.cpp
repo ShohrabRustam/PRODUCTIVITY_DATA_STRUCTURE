@@ -15,6 +15,11 @@ struct TreeNode {
 
    }
 
+   int countLeafNodes(TreeNode* root) {
+    if (root == NULL) return 0;
+    if (root->left == NULL && root->right == NULL) return 1; // Leaf node
+    return countLeafNodes(root->left) + countLeafNodes(root->right);
+
 
 void inorderTraversalLNR(TreeNode* root, vector<int>& result) {
     if (root == NULL) return;
@@ -121,6 +126,8 @@ int main(int argc, const char** argv) {
     cout << endl;
 
     cout << "\nSize of the tree: " << sizeOfTree(root) << endl;
+
+    cout << "Number of Leaf Nodes: " << countLeafNodes(root) << endl;
 
     // Clean up the tree to avoid memory leaks
     deleteTree(root);
