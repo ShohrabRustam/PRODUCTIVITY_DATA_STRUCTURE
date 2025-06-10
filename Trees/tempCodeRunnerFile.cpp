@@ -1,1 +1,2 @@
-postorderTraversalLRN
+
+    deleteTree(root);

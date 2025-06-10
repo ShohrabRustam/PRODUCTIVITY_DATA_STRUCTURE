@@ -9,6 +9,13 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
+   int sizeOfTree(TreeNode* root) {
+    if (root == NULL) return 0;
+    return 1 + sizeOfTree(root->left) + sizeOfTree(root->right);
+
+   }
+
+
 void inorderTraversalLNR(TreeNode* root, vector<int>& result) {
     if (root == NULL) return;
     if(root->val == -1) return; // Handle case for NULL nodes
@@ -89,6 +96,7 @@ int main(int argc, const char** argv) {
    for (int val : result) {
        cout << val << " ";
    }
+
    vector<int> result2;
    preorderTraversalNLR(root, result2);
    cout << "\nPreorder Traversal (NLR): ";
@@ -111,6 +119,8 @@ int main(int argc, const char** argv) {
         cout << val << " ";
     }
     cout << endl;
+
+    cout << "\nSize of the tree: " << sizeOfTree(root) << endl;
 
     // Clean up the tree to avoid memory leaks
     deleteTree(root);
