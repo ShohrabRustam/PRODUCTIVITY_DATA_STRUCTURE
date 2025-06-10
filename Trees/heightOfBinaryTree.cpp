@@ -21,12 +21,6 @@ struct TreeNode {
     return countLeafNodes(root->left) + countLeafNodes(root->right);
    }
 
-   int heightOfBinaryTree(TreeNode* root) {
-    if (root == NULL) return 0;
-    int leftHeight = heightOfBinaryTree(root->left);
-    int rightHeight = heightOfBinaryTree(root->right);
-    return max(leftHeight, rightHeight) + 1;
-   }
 
 void inorderTraversalLNR(TreeNode* root, vector<int>& result) {
     if (root == NULL) return;
