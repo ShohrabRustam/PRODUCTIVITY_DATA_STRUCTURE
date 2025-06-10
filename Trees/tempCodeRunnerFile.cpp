@@ -1,2 +1,1 @@
-
-    deleteTree(root);
+heightOfBinaryTree
