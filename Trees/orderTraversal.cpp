@@ -52,6 +52,28 @@ TreeNode* buildTreeLR() {
     return temp;
 
 }
+
+void levelOrderTraversal(TreeNode* root, vector<int>& result) {
+    if (!root) return;
+
+    queue<TreeNode*> q;
+    q.push(root);
+
+    while (!q.empty()) {
+        TreeNode* current = q.front();
+        q.pop();
+
+        if (current->val != -1) { // Only add non-NULL values
+            result.push_back(current->val);
+        }
+
+        if (current->left) 
+            q.push(current->left);
+        if (current->right) 
+            q.push(current->right);
+    }
+}
+
 void deleteTree(TreeNode* node) {
     if (!node) return;
     deleteTree(node->left);
@@ -81,6 +103,14 @@ int main(int argc, const char** argv) {
        cout << val << " ";
    }
    cout << endl;
+
+    vector<int> levelOrderResult;
+    levelOrderTraversal(root, levelOrderResult);
+    cout << "\nLevel Order Traversal: ";
+    for (int val : levelOrderResult) {
+        cout << val << " ";
+    }
+    cout << endl;
 
     // Clean up the tree to avoid memory leaks
     deleteTree(root);
