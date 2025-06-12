@@ -9,6 +9,40 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
+#include <iostream>
+#include <stack>
+using namespace std;
+
+struct Node {
+    int data;
+    Node* left;
+    Node* right;
+    Node(int val) : data(val), left(nullptr), right(nullptr) {}
+};
+
+    void inorderTraversal(Node* root) {
+        stack<Node*> st;
+        Node* current = root;
+
+        while (current != nullptr || !st.empty()) {
+            // Go to the leftmost node
+            while (current != nullptr) {
+                st.push(current);
+                current = current->left;
+            }
+
+            // Current is now nullptr, process the top node
+            current = st.top();
+            st.pop();
+
+            cout << current->data << " "; // Process the node
+
+            // Move to the right subtree
+            current = current->right;
+        }
+    }
+
+
     TreeNode* buildTreeFromInOrderPreOrder(int inOrder[], int preOrder[], int inStart, int inEnd, int& preIndex) {
         if (inStart > inEnd) return NULL;
 
