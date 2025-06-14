@@ -22,30 +22,93 @@ TreeNode* buildTreeLR() {
     return temp;
 
 }
+
+vector<int> morrisPostOrderTraversal(TreeNode* root){
+   // Left -> Right -> Node => Modified to reverse(Node -> Right -> left)
+    vector<int> result;
+    while (root)
+    {
+        if(root->right == nullptr){
+            result.push_back(root->val);
+            root = root->left;
+        }else{
+            TreeNode* current = root->right;
+            while (current->left && current->left != root) {
+                current = current->left;
+            }
+
+            if(current->left == nullptr){
+                result.push_back(root->val);
+                current->left = root;
+                root = root->right;
+            }else{
+                current->left = nullptr;
+                root = root->left;
+            }
+        
+        }
+    }
+    reverse(result.begin(), result.end());  // Reverse the vector in-place
+
+    return result;
+    
+}
+
+vector<int> morrisPreOrderTraversal(TreeNode* root){
+    // Node Left Right
+    vector<int> result;
+    while(root){
+        if(root->left == nullptr){
+            result.push_back(root->val);
+            root = root->right;
+        }else{
+            TreeNode* current = root->left;
+            while (current->right && current->right != root) {
+                current = current->right;
+            }
+
+            if(current->right == nullptr){
+                result.push_back(root->val);
+                current->right = root;
+                root = root->left;
+            }else{
+                current->right = nullptr;
+                root = root->right;
+            }
+            
+        }
+    }
+
+    return result;
+
+}
  
 vector<int> morrisInorderTraversal(TreeNode* root) {
+    //Left
+    //Root
+    //Right
     vector<int> result;
-    TreeNode* current = root;
     
-    while (current) {
-        if (!current->left) {
-            result.push_back(current->val);
-            current = current->right;
+    while (root) {
+        if (!root->left) {
+            result.push_back(root->val);
+            root = root->right;
         } else {
-            TreeNode* pre = current->left;
+
+            TreeNode* current = root->left;
             
-            while (pre->right && pre->right != current) {
-                pre = pre->right;
+            while (current->right && current->right != root) {
+                current = current->right;
             }
             
 
-            if (!pre->right) {
-                pre->right = current; // Make a thread
-                current = current->left;
+            if (!current->right) {
+                current->right = root; // Make a thread
+                root = root->left;
             } else {
-                pre->right = NULL; // Remove the thread
-                result.push_back(current->val);
-                current = current->right;
+                current->right = NULL; // Remove the thread
+                result.push_back(root->val);
+                root = root->right;
             }
         }
     }
@@ -67,6 +130,22 @@ int main(int argc, const char** argv) {
    result = morrisInorderTraversal(root);
    cout << "Morris Inorder Traversal: ";
    for (int val : result) {
+       cout << val << " ";
+   }
+   cout << endl;
+
+   vector<int> result1;
+   result1 = morrisPreOrderTraversal(root);
+    cout << "Morris PreOrder Traversal: ";
+   for (int val : result1) {
+       cout << val << " ";
+   }
+   cout << endl;
+
+    vector<int> result2;
+   result2 = morrisPreOrderTraversal(root);
+    cout << "Morris PostOrder Traversal: ";
+   for (int val : result2) {
        cout << val << " ";
    }
    cout << endl;
