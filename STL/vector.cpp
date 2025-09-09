@@ -32,7 +32,4 @@ int main(int argc, char **argv){
     vector<int> v2(v.begin(), v.end()-3);
     vector<int> v2(v.begin(), v.begin()+2);
 
-
-
-
 }
