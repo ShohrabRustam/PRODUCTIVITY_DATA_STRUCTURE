@@ -13,7 +13,7 @@ int main()
         cout << "Enter at index " << endl;
         cin >> a[i];
     }   
-    
+
     cout << "Elements of array are: ";
     for (int i = 0; i < size; i++) {
         cout << a[i] << " ";
@@ -24,5 +24,7 @@ int main()
         cout << a.at(i) << " ";
     }
     cout << endl; 
+    cout << "First element of array is: " << a.front() << endl;
+    cout << "Last element of array is: " << a.back() << endl;
     return 0;
 }
