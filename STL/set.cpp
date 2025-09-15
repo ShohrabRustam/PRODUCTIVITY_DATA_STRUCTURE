@@ -25,6 +25,15 @@ cout<<endl;
     cout<<"Finding 4 : "<<s.count(4)<<endl;
     cout<<"Finding 6 : "<<s.count(6)<<endl;
 
+set<int>::iterator it = s.find(1);
+if(it != s.end()){
+    cout<<"Element found : "<< *it << endl;
+
+    for(auto i = it; i!=s.end(); i++)
+        cout<< *i << " ";  
+}
+
+
 return 0;
 
 }
