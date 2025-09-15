@@ -15,5 +15,16 @@ int main()
  s.insert(5);
  for(auto i : s)
     cout<< i << " ";
-    return 0;
+    cout << endl;
+s.erase(3);
+cout<<endl;
+   for(auto i : s)
+        cout<< i << " "; 
+
+    cout<<endl;
+    cout<<"Finding 4 : "<<s.count(4)<<endl;
+    cout<<"Finding 6 : "<<s.count(6)<<endl;
+
+return 0;
+
 }

@@ -1,1 +1,2 @@
-priority_queue
+ s)
+    cout<< i <<
