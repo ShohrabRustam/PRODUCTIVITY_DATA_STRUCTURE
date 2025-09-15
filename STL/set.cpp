@@ -31,6 +31,8 @@ if(it != s.end()){
 
     for(auto i = it; i!=s.end(); i++)
         cout<< *i << " ";  
+}else{
+    cout<<"Element not found"<<endl;
 }
 
 
