@@ -13,5 +13,13 @@ int main()
     }else{
         cout<<"Not Present"<<endl;
     }
-    return 0;
+
+    cout<<"MAX: " << max(v[0],v[1]) <<endl;
+    cout<<"MIN: "<< min(v[0],v[1]) <<endl;
+    cout<<"MAX: " << *max_element(v.begin(),v.end())<<endl;
+    cout<<"MIN: "<< *min_element(v.begin(),v.end()) <<endl;
+    // cout << "SUM: " << accumulate(v.begin(), v.end(), 0) << endl;
+    // cout << "PRODUCT: " 
+    //  << accumulate(v.begin(), v.end(), 1, multiplies<int>()) << endl;
+    cout<<"COUNT 2: "<< count(v.begin(),v.end(),key) <<endl;
 }
